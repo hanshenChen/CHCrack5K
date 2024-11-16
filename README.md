@@ -1,55 +1,44 @@
-CHCrack5K Dataset
-Comprehensive Crack Detection Dataset
+# CHCrack5K Dataset
+A Comprehensive Dataset for Pixel-level Crack Detection
 
-Overview
-The CHCrack5K dataset is a comprehensive collection of crack images, curated by combining 11 publicly available crack detection datasets. This dataset consists of 5,014 labeled image samples, carefully processed to standardize dimensions and facilitate high-accuracy crack detection research.
+## Overview
+**CHCrack5K** is a robust dataset designed for advanced crack detection research. It combines 11 publicly available crack datasets into a unified set, resulting in 5,014 labeled image samples. Each dataset undergoes specific preprocessing to standardize all samples to a resolution of **480×480 pixels**. This dataset offers a diverse range of crack structures, providing a more challenging and realistic benchmark for testing robust crack detection algorithms.
 
-Composition and Preprocessing
-The dataset integrates images of varying resolutions and crack structures to create a more challenging benchmark for crack detection algorithms. All images are standardized to a resolution of 480×480 pixels, with specific processing methods applied to ensure uniformity:
+## Dataset Details and Processing
+Each of the 11 contributing datasets has been processed to ensure consistent dimensions and quality:
 
-CFD [52], MCD-Crack [53], and Road420 [54] datasets include padding to maintain spatial integrity.
-High-resolution datasets such as Crack500 [7] and SUT-Crack [55] are resized and cropped.
-CrackTree260 [56] and DeepCrack537 [57] are resized, with DeepCrack537 also requiring padding.
-This standardized approach ensures that the dataset provides a diverse range of samples, making it a robust tool for developing and testing crack detection models.
+- **CFD [52]**, **MCD-Crack [53]**, and **Road420 [54]**: Padding applied to retain spatial structure.
+- **Crack500 [7]** and **SUT-Crack [55]**: High-resolution images resized and cropped.
+- **DeepCrack537 [57]**: Padding and resizing applied for uniform dimensions.
+- **CrackTree260 [56]** and other datasets: Resized with necessary adjustments to standardize dimensions.
 
-Dataset Splits
-The dataset is randomly divided into:
+## Dataset Composition
+The dataset is divided as follows:
 
-3,510 training samples
-501 validation samples
-1,003 testing samples
-These splits allow for balanced model training, fine-tuning, and evaluation.
+- **Training set**: 3,510 samples
+- **Validation set**: 501 samples
+- **Testing set**: 1,003 samples
 
-Data Table
-Table I summarizes the details of each subset in the CHCrack5K dataset, including the number of samples, pixel dimensions, and post-processing steps:
+### Table I: Overview of the CHCrack5K Dataset
+| Dataset            | Original Resolution | Post-Processing       | Samples |
+|---------------------|---------------------|-----------------------|---------|
+| CFD [52]            | 480×320             | Padding               | 117     |
+| Crack500 [7]        | 2560×1440/...       | Cut + Resize          | 1,000   |
+| Road420 [54]        | 448×480             | Padding               | 420     |
+| MCD-Crack [53]      | 480×320             | Padding               | 235     |
+| SUT-Crack [55]      | 3024×4032           | Cut + Resize          | 260     |
+| CamCrack789 [58]    | 640×640             | Resize                | 789     |
+| DeepCrack537 [57]   | 544×384             | Padding + Resize      | 537     |
+| CrackTree260 [56]   | 800×600             | Padding + Resize      | 260     |
+| CrackLS315 [8]      | 512×512             | Resize                | 315     |
+| CRKWH100 [8]        | 512×512             | Resize                | 100     |
+| TunnelCrack [59]    | 512×512             | Resize                | 981     |
 
-Dataset	Resolution	Post-Processing	Samples
-CFD [52]	480×320	Padding	117
-Crack500 [7]	2560×1440/...	Cut + Resize	1,000
-Road420 [54]	448×480	Padding	420
-MCD-Crack [53]	480×320	Padding	235
-SUT-Crack [55]	3024×4032	Cut + Resize	260
-CamCrack789 [58]	640×640	Resize	789
-DeepCrack537 [57]	544×384	Padding + Resize	537
-CrackTree260 [56]	800×600	Padding + Resize	260
-CrackLS315 [8]	512×512	Resize	315
-CRKWH100 [8]	512×512	Resize	100
-TunnelCrack [59]	512×512	Resize	981
-Access and Usage
-The CHCrack5K dataset is freely available for academic and research purposes. Access it here:
+## Access the Dataset
+The dataset is hosted on GitHub and can be accessed via the following link:
 
-Download the CHCrack5K Dataset : https://
+[Download CHCrack5K Dataset](https://github.com/hanshenchen/CHCrack5K)
 
-Note: Please cite our paper if you use this dataset in your research.
-
-Citation
-If you use CHCrack5K in your work, please cite:
-
-css
-复制代码
-@dataset{CHCrack5K,
-  author = {Your Name},
-  title = {CHCrack5K: A Comprehensive Crack Detection Dataset},
-  year = {2024},
-  url = {https://github.com/hanshenchen/CHCrack5K}
-}
+## Citation
+If you use **CHCrack5K** in your research, please cite this dataset as follows:
+@dataset{CHCrack5K, author = {Your Name}, title = {CHCrack5K: A Comprehensive Crack Detection Dataset}, year = {2024}, url = {https://github.com/hanshenchen/CHCrack5K} }
