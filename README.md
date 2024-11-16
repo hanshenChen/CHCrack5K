@@ -37,7 +37,7 @@ The dataset is divided as follows:
 ## Access the Dataset
 The dataset is hosted on GitHub and can be accessed via the following link:
 
-[Download CHCrack5K Dataset]([https://drive.google.com/file/d/1EdfHX78Ov5sFw90HSN2JRww5RWPs1Zc1/view?usp=drive_link])
+[Download CHCrack5K Dataset](https://drive.google.com/file/d/1EdfHX78Ov5sFw90HSN2JRww5RWPs1Zc1/view?usp=drive_link)
 
 ## Citation
 If you use **CHCrack5K** in your research, please cite this dataset as follows:
