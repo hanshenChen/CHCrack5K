@@ -7,10 +7,10 @@ A Comprehensive Dataset for Pixel-level Crack Detection
 ## Dataset Details and Processing
 Each of the 11 contributing datasets has been processed to ensure consistent dimensions and quality:
 
-- **CFD [52]**, **MCD-Crack [53]**, and **Road420 [54]**: Padding applied to retain spatial structure.
-- **Crack500 [7]** and **SUT-Crack [55]**: High-resolution images resized and cropped.
-- **DeepCrack537 [57]**: Padding and resizing applied for uniform dimensions.
-- **CrackTree260 [56]** and other datasets: Resized with necessary adjustments to standardize dimensions.
+- **CFD**, **MCD-Crack**, and **Road420**: Padding applied to retain spatial structure.
+- **Crack500** and **SUT-Crack**: High-resolution images resized and cropped.
+- **DeepCrack537**: Padding and resizing applied for uniform dimensions.
+- **CrackTree260** and other datasets: Resized with necessary adjustments to standardize dimensions.
 
 ## Dataset Composition
 The dataset is divided as follows:
@@ -22,17 +22,17 @@ The dataset is divided as follows:
 ### Table I: Overview of the CHCrack5K Dataset
 | Dataset            | Original Resolution | Post-Processing       | Samples |
 |---------------------|---------------------|-----------------------|---------|
-| CFD [52]            | 480×320             | Padding               | 117     |
-| Crack500 [7]        | 2560×1440/...       | Cut + Resize          | 1,000   |
-| Road420 [54]        | 448×480             | Padding               | 420     |
-| MCD-Crack [53]      | 480×320             | Padding               | 235     |
-| SUT-Crack [55]      | 3024×4032           | Cut + Resize          | 260     |
-| CamCrack789 [58]    | 640×640             | Resize                | 789     |
-| DeepCrack537 [57]   | 544×384             | Padding + Resize      | 537     |
-| CrackTree260 [56]   | 800×600             | Padding + Resize      | 260     |
-| CrackLS315 [8]      | 512×512             | Resize                | 315     |
-| CRKWH100 [8]        | 512×512             | Resize                | 100     |
-| TunnelCrack [59]    | 512×512             | Resize                | 981     |
+| CFD                 | 480×320             | Padding               | 117     |
+| Crack500            | 2560×1440/...       | Cut + Resize          | 1,000   |
+| Road420             | 448×480             | Padding               | 420     |
+| MCD-Crack           | 480×320             | Padding               | 235     |
+| SUT-Crack           | 3024×4032           | Cut + Resize          | 260     |
+| CamCrack789         | 640×640             | Resize                | 789     |
+| DeepCrack537        | 544×384             | Padding + Resize      | 537     |
+| CrackTree260        | 800×600             | Padding + Resize      | 260     |
+| CrackLS315          | 512×512             | Resize                | 315     |
+| CRKWH100            | 512×512             | Resize                | 100     |
+| TunnelCrack         | 512×512             | Resize                | 981     |
 
 ## Access the Dataset
 The dataset is hosted on GitHub and can be accessed via the following link:
