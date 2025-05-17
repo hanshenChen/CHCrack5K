@@ -2,7 +2,7 @@
 A Comprehensive Dataset for Pixel-level Crack Detection
 
 ## Overview
-**CHCrack5K** is a robust dataset designed for advanced crack detection research. It combines 11 publicly available crack datasets into a unified set, resulting in 5,014 labeled image samples. Each dataset undergoes specific preprocessing to standardize all samples to a resolution of **480×480 pixels**. This dataset offers a diverse range of crack structures, providing a more challenging and realistic benchmark for testing robust crack detection algorithms.
+**CHCrack5K** is a comprehensive crack dataset containing 5,014 annotated images by integrating 11 publicly available, high-quality, labeled datasets. Details of the datasets are provided in Table 1. Each dataset undergoes specific processing to standardize the samples at a resolution of 480 × 480 pixels. For datasets such as CFD, MCD-Crack, and Road420, padding is applied to maintain spatial structure. High-resolution datasets such as Crack500 and SUT-Crack are resized and cropped. Other datasets, such as CrackTree260 and DeepCrack537 are resized, with the latter also requiring padding to achieve uniformity in dimensions. This combined dataset provides a diverse set of samples, encom-passing various materials, crack structures, and fluctuating lighting conditions, thereby creating a more challenging and robust environment for crack detection. The dataset is randomly split into 3,510 training samples, 501 validation samples, and 1,003 testing samples. 
 
 ## Dataset Details and Processing
 Each of the 11 contributing datasets has been processed to ensure consistent dimensions and quality:
@@ -34,6 +34,8 @@ The dataset is divided as follows:
 | CRKWH100            | 512×512             | Resize                | 100     |
 | TunnelCrack         | 512×512             | Resize                | 981     |
 
+*For detailed subset download links, please refer to the references provided in the [paper](https://doi.org/10.1016/j.eswa.2025.128144).
+
 ## Access the Dataset
 The dataset is hosted on GitHub and can be accessed via the following link:
 
@@ -41,4 +43,13 @@ The dataset is hosted on GitHub and can be accessed via the following link:
 
 ## Citation
 If you use **CHCrack5K** in your research, please cite this dataset as follows:
-@dataset{CHCrack5K, author = {Your Name}, title = {CHCrack5K: A Comprehensive Crack Detection Dataset}, year = {2024}, url = {https://github.com/hanshenchen/CHCrack5K} }
+@article{CHEN2025128144,
+title = {HACNet V2: Rethinking the full-resolution architecture for pixel-level crack detection},
+journal = {Expert Systems with Applications},
+pages = {128144},
+year = {2025},
+issn = {0957-4174},
+doi = {https://doi.org/10.1016/j.eswa.2025.128144},
+url = {https://www.sciencedirect.com/science/article/pii/S0957417425017646},
+author = {Hanshen Chen and Hao Chen}
+}
