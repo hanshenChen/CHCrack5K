@@ -43,6 +43,7 @@ The dataset is hosted on GitHub and can be accessed via the following link:
 
 ## Citation
 If you use **CHCrack5K** in your research, please cite this dataset as follows:
+```bibtex
 @article{CHEN2025128144,
 title = {HACNet V2: Rethinking the full-resolution architecture for pixel-level crack detection},
 journal = {Expert Systems with Applications},
@@ -53,3 +54,4 @@ doi = {https://doi.org/10.1016/j.eswa.2025.128144},
 url = {https://www.sciencedirect.com/science/article/pii/S0957417425017646},
 author = {Hanshen Chen and Hao Chen}
 }
+```
